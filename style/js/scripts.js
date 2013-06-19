@@ -17,7 +17,7 @@
 
 					$('.full-layout .banner').revolution(
 						{
-							delay:9000,
+							delay:7000,
 							startheight:470,
 							startwidth:960,
 
@@ -33,11 +33,11 @@
 							navOffsetHorizontal:0,
 							navOffsetVertical:-35,
 
-							stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
-							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+							stopAtSlide:0,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+							stopAfterLoops:1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
 
 							shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-							fullWidth:"off",							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+							fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 
 
 						});
@@ -64,7 +64,7 @@
 							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
 
 							shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-							fullWidth:"off",							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+							fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 
 
 						});
@@ -93,7 +93,7 @@
 							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
 
 							shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-							fullWidth:"off",							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+							fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 
 
 						});
@@ -120,7 +120,7 @@
 							stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
 
 							shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-							fullWidth:"off",							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+							fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 
 
 						});
@@ -130,61 +130,6 @@
 
 					});
 
-/*-----------------------------------------------------------------------------------*/
-/*	FLICKR
-/*-----------------------------------------------------------------------------------*/
-	
-$(document).ready(function($){
-	$('.flickr.feed').dcFlickr({
-		limit: 15, 
-        q: { 
-            id: '26979613@N00',
-			lang: 'en-us',
-			format: 'json',
-			jsoncallback: '?'
-        },
-		onLoad: function(){
-			$('.feed .frame a').prepend('<span class="more"></span>');
-			$('.feed .frame').mouseenter(function(e) {
-
-            $(this).children('a').children('span').fadeIn(300);
-        }).mouseleave(function(e) {
-
-            $(this).children('a').children('span').fadeOut(200);
-        });
-		}
-	});
-});	
-
-/*-----------------------------------------------------------------------------------*/
-/*	DRIBBBLE
-/*-----------------------------------------------------------------------------------*/
-
-$(document).ready(function () {		
-		
-	$.jribbble.getShotsByPlayerId('tweedlebop', function (playerShots) {
-		var html = [];
-		
-		$.each(playerShots.shots, function (i, shot) {
-			html.push('<li class="frame"><a href="' + shot.url + '" target="_blank">');
-			html.push('<img class="round" src="' + shot.image_teaser_url + '" ');
-			html.push('alt="' + shot.title + '"></a></li>');
-		});
-		
-		$('.dribbble.feed').html(html.join(''));
-		
-		$('.feed .frame').mouseenter(function(e) {
-
-            $(this).children('a').children('span').fadeIn(200);
-        }).mouseleave(function(e) {
-
-            $(this).children('a').children('span').fadeOut(200);
-        });
-
-	}, {page: 1, per_page: 20});
-	
-	
-});
 
 /*-----------------------------------------------------------------------------------*/
 /*	FORM

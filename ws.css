@@ -1,0 +1,38 @@
+.cursive {
+  font-family: 'Marck Script', cursive;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+.banner .title {
+  font-size: 48px;
+}
+
+.banner .blue {
+  background-color: #6094B4;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+body {
+  background: transparent url(style/images/ws/bg2.jpg) repeat fixed;
+}
+
+a:hover {
+  color: #3d87b3
+}
+
+ul.unordered li:before {
+  /*font-family: 'fontello';*/
+  content: "\2022";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  font-size: 13px;
+  padding-right: 10px;
+}

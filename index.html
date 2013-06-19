@@ -6,12 +6,11 @@
   <title>Wolkenschieber</title>
   <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="ws.css" media="all"/>
   <link rel="stylesheet" type="text/css" href="style/css/media-queries.css" media="all"/>
-  <link rel="stylesheet" type="text/css" href="style/js/fancybox/jquery.fancybox.css" media="all"/>
-  <link rel="stylesheet" type="text/css" href="style/js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.2"/>
-  <link rel="stylesheet" type="text/css" href="style/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2"/>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,500italic,500,400italic,300italic,300'
         rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style/type/fontello.css">
   <!--[if IE 8]>
   <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all"/>
@@ -24,21 +23,7 @@
   <script type="text/javascript" src="style/js/selectnav.js"></script>
   <script type="text/javascript" src="style/js/jquery.themepunch.plugins.min.js"></script>
   <script type="text/javascript" src="style/js/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="style/js/jquery.themepunch.megafoliopro.min.js"></script>
-  <script type="text/javascript" src="style/js/fullwidth-slider.js"></script>
   <script type="text/javascript" src="style/js/jquery.easytabs.js"></script>
-  <script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
-  <script type="text/javascript" src="style/js/jquery.jribbble-0.11.0.ugly.js"></script>
-  <script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
-  <script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="style/js/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="style/js/jquery.address.min.js"></script>
-  <script type="text/javascript" src="style/js/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="style/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
-  <script type="text/javascript" src="style/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"></script>
-  <script type="text/javascript" src="style/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
-  <script type="text/javascript" src="style/js/jquery.dpSocialTimeline.js"></script>
-  <script type="text/javascript" src="style/js/jquery.themepunch.showbizpro.js"></script>
 </head>
 <body class="full-layout">
 
@@ -47,23 +32,18 @@
   <div class="inner">
     <!-- Begin Header -->
     <div class="header">
-      <div class="logo"><a href="index.html"><img src="style/images/ws/logo.png" alt=""/></a></div>
+      <div class="logo">
+        <a href="index.html"><i class="icon-cloud"></i><span class="cursive">Wolkenschieber</span></a></div>
       <div class="clear"></div>
     </div>
     <!-- End Header -->
     <!-- Begin Menu -->
     <div id="menu" class="menu clearfix">
       <ul id="tiny">
-        <li><a href="index.html">Startseite</a>
-        </li>
-        <li><a href="#about">Wir schieben Wolken</a>
-        </li>
-        <li><a href="#angebote">Für wen</a>
-        </li>
-        <li><a href="#feelings">Wann</a></li>
-        <li><a href="#feelings">Wie</a></li>
-        <li><a href="#feelings">Über Uns</a></li>
-        <li><a href="#links">Andere</a></li>
+        <li><a href="#about">Wir schieben Wolken</a></li>
+        <li><a href="#whom">Für wen</a></li>
+        <li><a href="#when">Wann</a></li>
+        <li><a href="#how">Wie</a></li>
         <li><a href="#contact">Kontakt Uns</a></li>
       </ul>
     </div>
@@ -75,39 +55,42 @@
         <div class="banner">
           <ul>
 
-            <li data-transition="random"><img src="style/images/ws/slider-full-1.jpg" alt=""/>
+            <li data-transition="slidehorizontal" data-link="#about"><img src="style/images/ws/slider-full-1.jpg"
+                                                                          alt=""/>
 
-              <div class="caption sfl white bold" data-x="80" data-y="83" data-speed="300" data-start="900"
+              <div class="cursive title caption sfl white bold" data-x="80" data-y="83" data-speed="300"
+                   data-start="1200"
                    data-easing="easeOutExpo">Wolkenschieber
               </div>
-              <div class="caption sfr white" data-x="80" data-y="367" data-speed="300" data-start="1200"
+              <div class="cursive caption sfl white" data-x="80" data-y="120" data-speed="300" data-start="1600"
                    data-easing="easeOutExpo">Making life easier.
               </div>
             </li>
 
-            <li data-transition="random"><img src="style/images/ws/slider-full-2.jpg" alt=""/>
+            <li data-transition="slidehorizontal" data-link="#whom">
+              <img src="style/images/ws/slider-full-2.jpg" alt=""/>
 
-              <div class="caption sft black_bg bold" data-x="285" data-y="60" data-speed="900" data-start="2000"
-                   data-easing="easeOutExpo">Collecting ideas to meet our goals.
+              <div class="cursive caption sft blue white_bg bold" data-x="461" data-y="60" data-speed="900"
+                   data-start="800"
+                   data-easing="easeOutExpo">Unterstüzen
               </div>
-              <div class="caption sfl black_bg bold" data-x="170" data-y="180" data-speed="900" data-start="800"
-                   data-easing="easeOutExpo">Research
+              <div class="cursive caption sfl blue white_bg bold" data-x="280" data-y="130" data-speed="900"
+                   data-start="1000"
+                   data-easing="easeOutExpo">Begleiten
               </div>
-              <div class="caption sfr black_bg bold" data-x="660" data-y="204" data-speed="900" data-start="1000"
-                   data-easing="easeOutExpo">Strategy
+              <div class="cursive caption sfl blue white_bg bold" data-x="200" data-y="204" data-speed="900"
+                   data-start="1200"
+                   data-easing="easeOutExpo">Gemeinsam
               </div>
-              <div class="caption sfl black_bg bold" data-x="221" data-y="330" data-speed="900" data-start="1200"
-                   data-easing="easeOutExpo">Creativity
-              </div>
-              <div class="caption sfr black_bg bold" data-x="605" data-y="363" data-speed="900" data-start="1400"
-                   data-easing="easeOutExpo">Management
+              <div class="cursive caption sfl blue white_bg bold" data-x="280" data-y="280" data-speed="900"
+                   data-start="1400"
+                   data-easing="easeOutExpo">Stäken
               </div>
             </li>
-            <li data-transition="random"><img src="style/images/ws/team.png" alt=""/></li>
+            <li data-transition="slidehorizontal" data-link="#about"><img src="style/images/ws/team.png" alt=""/></li>
 
 
           </ul>
-          <div class="tp-bannertimer tp-bottom"></div>
         </div>
       </div>
       <div class="slider-shadow"></div>
@@ -156,7 +139,7 @@
   <!-- End Inner -->
 </div>
 
-<div id="about" class="gray-wrapper">
+<div id="whom" class="gray-wrapper">
   <!-- Begin Inner -->
   <div class="inner">
     <h2 class="line">Für wen</h2>
@@ -166,15 +149,17 @@
     </div>
     <div class="one-half">
       <img src="style/images/ws/iStock_girl.png" size="400x400" alt="" class="left"/>
-        <p>  Kinder und Jugendliche sind mit der schweren Erkrankung eines Familienmitgliedes konfrontiert.
+
+      <p> Kinder und Jugendliche sind mit der schweren Erkrankung eines Familienmitgliedes konfrontiert.
 
 
-        </p>
+      </p>
 
     </div>
 
     <div class="one-half last">
       <img src="style/images/ws/iStock_boy.png" alt="" class="left"/>
+
       <p> Kinder und Jugendliche sind mit dem Tod eines nahen Familienangehörigen konfrontiert.</p>
     </div>
     <div class="clear"></div>
@@ -183,16 +168,21 @@
   </div>
 </div>
 
-<div id="about" class="white-wrapper">
+<div id="when" class="white-wrapper">
   <!-- Begin Inner -->
   <div class="inner">
     <h2 class="line">Wann</h2>
 
-    <div class="intro">Es gibt Momente, in denen die Wolken so dunkel sind, dass eine Familie allein nicht in der Lage ist das
+    <div class="intro">Es gibt Momente, in denen die Wolken so dunkel sind, dass eine Familie allein nicht in der Lage
+      ist das
       Licht hinter den Wolken zu suchen oder mit der Dunkelheit eine Weile zu leben.
     </div>
-    <div class="one-half last" style="background-image: url(http://placehold.it/350x150)">
+    <div class="one-half">
+      <img src="style/images/ws/kids_hands_376_34.jpg" alt="" class="center"/>
+    </div>
 
+
+    <div class="one-half last">
       <ul class="unordered">
         <li>den Verlust der gewohnten Alltagsroutine</li>
         <li>Veränderungen, ungewohnte Situationen</li>
@@ -216,7 +206,7 @@
   </div>
 </div>
 
-<div id="about" class="gray-wrapper">
+<div id="how" class="gray-wrapper">
   <!-- Begin Inner -->
   <div class="inner">
     <h2 class="line">Wie</h2>
