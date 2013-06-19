@@ -6,6 +6,12 @@
   font-size: 36px;
 }
 
+.ev {
+  font-size: 24px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
 .banner .title {
   font-size: 48px;
 }
@@ -35,4 +41,15 @@ ul.unordered li:before {
   text-decoration: inherit;
   font-size: 13px;
   padding-right: 10px;
+}
+
+.blue-wrapper {
+  background-color: #ECF5FC;
+  -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+  -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+}
+
+h2.line {
+  color: #6094B4;
 }
