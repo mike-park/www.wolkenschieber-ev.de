@@ -104,7 +104,7 @@ input[type="submit"]:focus, input[type="button"]:focus {
 /*	GENERAL
 /*-----------------------------------------------------------------------------------*/
 body {
-	background: transparent url(style/images/bg/bg1.jpg) repeat fixed;
+	background: transparent url(style/images/bg/bg4.jpg) repeat fixed;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     font-family: 'Ubuntu', sans-serif;
