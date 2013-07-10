@@ -19,12 +19,10 @@
   <!--[if IE 9]>
   <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all"/>
   <![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
-  <script type="text/javascript" src="style/js/selectnav.js"></script>
-  <script type="text/javascript" src="style/js/jquery.themepunch.plugins.min.js"></script>
-  <script type="text/javascript" src="style/js/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="style/js/jquery.easytabs.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
+  <![endif]-->
 </head>
 <body class="full-layout">
 <script>
@@ -253,12 +251,7 @@
     <h2 class="line">Kontakt</h2>
 
     <div class="one-half">
-      <div class="map">
-        <iframe width="640" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://maps.google.com/?ie=UTF8&amp;ll=51.9080892,8.3753808&amp;spn=0.044798,0.132093&amp;t=m&amp;z=16&amp;output=embed"
-                xsrc="https://www.google.com/maps?sll=51.9080892,8.3753808&sspn=0.002102369063401279%2C0.0033112927287849126&t=m&z=16&output=embed">
-        </iframe>
-      </div>
+      <div id="map" style="height: 300px"></div>
     </div>
     <div class="one-half last">
       <h4>Kontakt</h4>
@@ -299,6 +292,14 @@
   </div>
 </div>
 <!-- End Site Generator -->
-<script type="text/javascript" src="style/js/scripts.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="style/js/ddsmoothmenu.js"></script>
+<script src="style/js/selectnav.js"></script>
+<script src="style/js/jquery.themepunch.plugins.min.js"></script>
+<script src="style/js/jquery.themepunch.revolution.min.js"></script>
+<script src="style/js/jquery.easytabs.js"></script>
+<script src="style/js/scripts.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+<script src="style/js/map.js"></script>
 </body>
 </html>
