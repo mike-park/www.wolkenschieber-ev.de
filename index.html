@@ -8,7 +8,67 @@
   <title>Wolkenschieber e.V.: Unterstützung für Kinder in besonderer Lebenssituation.</title>
   <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-  <link rel="stylesheet" type="text/css" href="ws.css" media="all"/>
+  <style>
+    .cursive {
+      font-family: 'Marck Script', cursive;
+    }
+
+    .logo {
+      font-size: 36px;
+    }
+
+    .ev {
+      font-size: 24px;
+      padding-left: 5px;
+      padding-bottom: 2px;
+    }
+
+    .banner .title {
+      font-size: 48px;
+    }
+
+    .banner .blue {
+      background-color: #6094B4;
+      color: white;
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    body {
+      background: transparent url(style/images/ws/bg2.jpg) repeat fixed;
+    }
+
+    a:hover {
+      color: #3d87b3
+    }
+
+    ul.unordered li:before {
+      /*font-family: 'fontello';*/
+      content: "\2022";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      font-size: 13px;
+      padding-right: 10px;
+    }
+
+    .blue-wrapper {
+      background-color: #ECF5FC;
+      -webkit-box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+      -moz-box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+      box-shadow: 0 -1px 0 rgba(0,0,0,0.14), inset 0 -1px 0 rgba(0,0,0,0.09);
+    }
+
+    h2.line {
+      color: #6094B4;
+    }
+    google-map {
+      display: block;
+      height: 300px;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="style/css/media-queries.css" media="all"/>
   <link href='//fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,500italic,500,400italic,300italic,300' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
@@ -18,10 +78,6 @@
   <![endif]-->
   <!--[if IE 9]>
   <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all"/>
-  <![endif]-->
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
   <![endif]-->
 </head>
 <body class="full-layout">
@@ -66,8 +122,8 @@
         <div class="banner">
           <ul>
 
-            <li data-transition="slidehorizontal" data-link="#about"><img src="style/images/ws/slider-full-1.jpg"
-                                                                          alt="Wolkenschieber: Unterstützung für Kinder"/>
+            <li data-transition="slidehorizontal" data-link="#about">
+              <img src="style/images/ws/slider-full-1.jpg" height="470" width="960" alt="Wolkenschieber: Unterstützung für Kinder"/>
 
               <div class="cursive title caption sfl white bold" data-x="80" data-y="83" data-speed="300"
                    data-start="1200"
@@ -79,7 +135,7 @@
             </li>
 
             <li data-transition="slidehorizontal" data-link="#whom">
-              <img src="style/images/ws/slider-full-2.jpg" alt="Gemeinsam / Begleiten / Unterstützen / Stärken"/>
+              <img src="style/images/ws/slider-full-2.jpg" height="470" width="960" alt="Gemeinsam / Begleiten / Unterstützen / Stärken"/>
 
               <div class="cursive caption sft blue white_bg bold" data-x="461" data-y="60" data-speed="900"
                    data-start="800"
@@ -98,9 +154,9 @@
                    data-easing="easeOutExpo">Stärken
               </div>
             </li>
-            <li data-transition="slidehorizontal" data-link="#about"><img src="style/images/ws/slider-full-3.jpg" alt="Das Team"/></li>
-
-
+            <li data-transition="slidehorizontal" data-link="#about">
+              <img src="style/images/ws/slider-full-3.jpg" height="470" width="960" alt="Das Team"/>
+            </li>
           </ul>
         </div>
       </div>
@@ -121,7 +177,7 @@
     </div>
     <div class="one-third">
       <h4>Wir</h4>
-      <img src="style/images/ws/team.png" alt="Team" class='left'/>
+      <img src="style/images/ws/team.png" height="198" width="276" alt="Team" class='left'/>
 
       <p>Gründungsmitglieder des Vereins Wolkenschieber e.V.
         von links: Andrea Hucketewes (1. Stellvertreterin),
@@ -159,7 +215,7 @@
       begleiten.
     </div>
     <div class="one-half">
-      <img src="style/images/ws/iStock_girl.png" size="400x400" alt="" class="left"/>
+      <img src="style/images/ws/iStock_girl.png" size="400x400" height="153" width="212" alt="" class="left"/>
 
       <p> Kinder und Jugendliche sind mit der schweren Erkrankung eines Familienmitgliedes konfrontiert.
 
@@ -169,7 +225,7 @@
     </div>
 
     <div class="one-half last">
-      <img src="style/images/ws/iStock_boy.png" alt="" class="left"/>
+      <img src="style/images/ws/iStock_boy.png" height="153" width="213" alt="" class="left"/>
 
       <p> Kinder und Jugendliche sind mit dem Tod eines nahen Familienangehörigen konfrontiert.</p>
     </div>
@@ -189,7 +245,7 @@
       Licht hinter den Wolken zu suchen oder mit der Dunkelheit eine Weile zu leben.
     </div>
     <div class="one-half">
-      <img src="style/images/ws/kids_hands_376_34.jpg" alt="" class="center"/>
+      <img src="style/images/ws/kids_hands_376_34.jpg" width="376" height="434" alt="" class="center"/>
     </div>
 
 
@@ -249,13 +305,6 @@
 <div id="contact" class="white-wrapper">
   <div class="inner">
     <h2 class="line">Kontakt</h2>
-
-    <style>
-      google-map {
-        display: block;
-        height: 300px;
-      }
-    </style>
     <div class="one-half">
       <google-map latitude="51.908099" longitude="8.375458" zoom="14">
         <google-map-marker latitude="51.908099" longitude="8.375458" title="Wolkenschieber"></google-map-marker>
@@ -307,7 +356,6 @@
 <script src="style/js/selectnav.js"></script>
 <script src="style/js/jquery.themepunch.plugins.min.js"></script>
 <script src="style/js/jquery.themepunch.revolution.min.js"></script>
-<script src="style/js/jquery.easytabs.js"></script>
 <script src="style/js/scripts.js"></script>
 </body>
 </html>
